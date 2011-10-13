@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Example horizontal control</title>
+	<link rel="stylesheet" href="css/carousel.css" type="text/css" media="screen" charset="utf-8">
+	<script src="../lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/effects.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../src/carousel.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<h1>Carousel.js</h1>
+	<h2>Example</h2>
+	<p>View source for HTML & CSS used.
+	
+	<div id="my-carousel">
+		<div class="scroller">
+			<div class="content">
+				<div class="section" id="section1">
+					Section 1
+					<p>You can put any kind of HTML in here:</p>
+					<img src="libertad.png" />
+				</div>
+				<div class="section" id="section2">
+					Section 2
+					<p>Style the sections however you want</p>
+				</div>
+				<div class="section" id="section3">
+					Section 3
+					<p>I-frames? Yes, but only if scrollbars are hidden:</p>					
+					<iframe src="http://localhost" style="overflow:hidden"></iframe>
+				</div>
+				<div class="section" id="section4">
+					Section 4
+					<p>Flash? Sort-of works:</p>					
+					<object width="200" height="150"><param name="movie" value="http://www.youtube.com/v/Ef-f7EeDpYI"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/Ef-f7EeDpYI" type="application/x-shockwave-flash" wmode="transparent" width="200" height="150"></embed></object>					
+				</div>
+			</div>
+		</div>
+		<!-- init controls section -->
+		<ul class="controls">
+			<li><a href="#section1">Section 1</a></li>
+			<li><a href="#section2">Section 2</a></li>
+			<li><a href="#section3">Section 3</a></li>
+			<li><a href="#section4">Section 4</a></li>
+		</ul>
+		<!-- end controls section -->
+	</div>
+	<a href="#" onclick="my_carousel.previous();return false;">Previous</a> | <a href="#" onclick="my_carousel.next();return false">Next</a><br>
+	<a href="#" onclick="my_carousel.stop();return false;">Stop</a> | <a href="#" onclick="my_carousel.start();return false">Start</a><br>
+	<script type="text/javascript" charset="utf-8">
+		var my_carousel = new Carousel('my-carousel', {scrollDuration:0.5,sectionDuration:2, initialSection:'section2'});
+	</script>
+	
+	<h2>Requirements</h2>
+	<p>This script uses the <a href="http://www.prototypejs.org/">Prototype</a> javascript framework and the effects.js library from <a href="http://script.aculo.us/">Scriptaculous</a>. You must include Prototype version 1.5+ in your pages before including this script. This library is known to work in recent versions of IE 6/7, FireFox, and Safari.</p>
+	
+	<h2>Notes</h2>
+	<p>You can create multiple carousels on one page. </p>
+	<p>You can determine which section will be scrolled to initially by using the initialSection option - i.e. {initialSection: 'section4'}}</p>
+	<p>You can make the Carousel periodically update by using the autoStar and sectionDuration options - i.e. {autoStar: true, sectionDuration: 4}</p>
+
+</body>
+</html>
