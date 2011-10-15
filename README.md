@@ -5,6 +5,12 @@ This script makes it easy to create a sliding carousel component.
 
 This script uses the Prototype javascript framework and the effects.js library from Scriptaculous. You must include Prototype version 1.7+ in your pages before including this script. This library is known to work in recent versions of IE 6/7, FireFox, Opera and Safari.
 
+Get source code
+------------------------------------------------------------------------------------------
+
+<a href="https://github.com/mundoSICA/prototypeJsCarousel/tarball/master" class="button icon arrowdown">Download as <b>.tar.gz</b></a>
+<a href="https://github.com/mundoSICA/prototypeJsCarousel/zipball/master" class="button icon arrowdown">Download as <b>.zip</b></a>
+
 
 Options
 ------------------------------------------------------------------------------------------
